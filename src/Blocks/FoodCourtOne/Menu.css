@@ -1,0 +1,44 @@
+
+
+/* Black Theme */
+.menu-black {
+  background-color: #000;
+  color: #fff;
+}
+
+/* White Theme */
+.menu-white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Orange Theme */
+.menu-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+/* Green Theme */
+.menu-green {
+  background-color: #E8F5E9; /* light green background */
+  color: #1B5E20;
+}
+
+/* Ensure readable text on dark theme */
+.menu-black h1,
+.menu-black h2,
+.menu-black h3,
+.menu-black p,
+.menu-black a {
+  color: #fff;
+}
+
+/* Optional: green theme button override */
+.menu-green a {
+  background-color: #2E7D32;
+  color: #fff;
+}
+
+.menu-green a:hover {
+  background-color: #1B5E20;
+}

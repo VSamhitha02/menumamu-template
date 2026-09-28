@@ -1,0 +1,81 @@
+/* ================== Theme Variations ================== */
+
+/* ---- Black Theme ---- */
+/* .menu-black {
+  background-color: #000;
+  color: #fff;
+} */
+
+/* ---- White Theme ---- */
+/* .menu-white {
+  background-color: #fff;
+  color: #000;
+} */
+
+/* ---- Orange Theme ---- */
+/* .menu-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+} */
+
+/* ---- Green Theme ---- */
+/* .menu-green {
+  background-color: white;
+  color: #1B5E20;
+} */
+
+/* ---- Modern Light Theme ---- */
+/* .menu-modern-light {
+  background-color: #FFF3E0;
+  color: #BF360C;
+} */
+
+/* ---- Modern Dark Theme ---- */
+/* .menu-modern-dark {
+  background-color: #BF360C;
+  color: #fff;
+} */
+
+/* Ensure readable text in dark themes */
+.menu-black h2,
+.menu-black p,
+.menu-black li,
+.menu-modern-dark h2,
+.menu-modern-dark p,
+.menu-modern-dark li {
+  color: #fff;
+}
+
+/* ================== Menu Card ================== */
+
+.menu-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem; /* same as Tailwind rounded-xl */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Green theme card override */
+.menu-green .menu-card {
+  background-color: #C8E6C9;
+  color: #1B5E20;
+}
+
+/* ================== Menu Tag ================== */
+
+.menu-tag {
+  background-color: #388E3C;
+  color: #fff;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  width: fit-content;
+  white-space: nowrap;
+}

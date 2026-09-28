@@ -1,0 +1,134 @@
+// {
+//   "$schema": "node_modules/wrangler/config-schema.json",
+
+//   "name": "my-payload-project",
+//   "main": ".open-next/worker.js",
+//   "compatibility_date": "2025-08-15",
+//   "account_id": "d9baaab0c1064d8c998c9c6482185697",
+//   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+
+//   "assets": {
+//     "directory": ".open-next/assets",
+//     "binding": "ASSETS",
+//   },
+
+//   "observability": {
+//     "logs": {
+//       "enabled": false,
+//       "invocation_logs": true,
+//     },
+//   },
+
+//   "d1_databases": [
+//     {
+//       "binding": "D1",
+//       // "database_name": "menu-mamu",
+//       "database_name": "menu-mamu-prod",
+//       "database_id": "e92838a1-1579-42a7-959b-8519a0baeed1",
+//       "preview_database_id": "9a11b289-b110-4ed0-9ea4-7c730dd91667",
+//       "remote": true,
+//     },
+//   ],
+//   "r2_buckets": [
+//     {
+//       "bucket_name": "menu-mamu-r2-prod",
+//       "preview_bucket_name": "menu-memu-r2",
+//       "binding": "R2",
+//       "remote": true,
+//     },
+//     {
+//       "binding": "NEXT_INC_CACHE_R2_BUCKET",
+//       "bucket_name": "menu-mamu-r2-prod",
+//     },
+//   ],
+// }
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "account_id": "d9baaab0c1064d8c998c9c6482185697",
+
+  
+  "name": "my-payload-project",
+  "compatibility_date": "2025-08-15",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS",
+  },
+
+  "observability": {
+    "enabled": false,
+    "head_sampling_rate": 1,
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "persist": true,
+
+      "invocation_logs": true,
+    },
+    "traces": {
+      "enabled": false,
+      "persist": true,
+      "head_sampling_rate": 1,
+    },
+  },
+  "d1_databases": [
+    {
+      "binding": "D1",
+      // "database_name": "menumamu-prod",
+      // "database_id": "42ef5204-675c-4baf-b299-95f5d7a2bf33",
+      "database_name": "menu-mamu-prod",
+      "database_id": "e92838a1-1579-42a7-959b-8519a0baeed1",
+      "remote": true,
+    },
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "menu-mamu-r2-prod",
+      "remote": true,
+      // "preview_bucket_name": "payload-media-dev"
+    },
+
+    {
+      // Required by OpenNext for caching
+      "binding": "NEXT_INC_CACHE_R2_BUCKET",
+      "bucket_name": "menu-mamu-r2-prod",
+      "remote": true,
+      // "preview_bucket_name": "payload-media-dev"
+    },
+  ],
+  "env": {
+    "preview": {
+      "name": "menumamu-template",
+      "d1_databases": [
+        {
+          "binding": "D1",
+          // "database_name": "menu-mamu",
+          // "database_id": "9a11b289-b110-4ed0-9ea4-7c730dd91667",
+          "database_name": "menu-mamu-prod",
+          "database_id": "e92838a1-1579-42a7-959b-8519a0baeed1",
+          // "database_name": "menumamu-prod",
+          // "database_id": "42ef5204-675c-4baf-b299-95f5d7a2bf33",
+          "remote": true,
+        },
+      ],
+      "r2_buckets": [
+        {
+          "binding": "R2",
+          // "bucket_name": "menu-memu-r2",
+          "bucket_name": "menu-mamu-r2-prod",
+          // "bucket_name": "menumamu-prod-bucket",
+          "remote": true,
+        },
+        {
+          "binding": "NEXT_INC_CACHE_R2_BUCKET",
+          // "bucket_name": "menu-memu-r2",
+          "bucket_name": "menu-mamu-r2-prod",
+          // "bucket_name": "menumamu-prod-bucket",
+          "remote": true,
+        },
+      ],
+    },
+  },
+}

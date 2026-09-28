@@ -1,0 +1,63 @@
+/* ================= THEME BACKGROUNDS ================= */
+
+.contact-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.contact-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+.contact-green {
+  background-color: #E8F5E9;
+  color: #1B5E20;
+}
+
+
+/* ================= THEME BUTTON COLORS ================= */
+
+.contact-black button {
+  background-color: #fff;
+  color: #000;
+}
+
+.contact-white button {
+  background-color: #000;
+  color: #fff;
+}
+
+.contact-orange button {
+  background-color: #BF360C;
+  color: #fff;
+}
+
+.contact-green button {
+  background-color: #2E7D32;
+  color: #fff;
+}
+
+
+/* ================= BUTTON HOVER ================= */
+
+.contact-black button:hover {
+  opacity: 0.9;
+}
+
+.contact-white button:hover {
+  opacity: 0.9;
+}
+
+.contact-orange button:hover {
+  background-color: #8D2A00;
+}
+
+.contact-green button:hover {
+  background-color: #1B5E20;
+}

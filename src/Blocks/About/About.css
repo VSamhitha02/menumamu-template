@@ -1,0 +1,35 @@
+/* Theme colors */
+.about-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.about-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.about-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+.about-green {
+  background-color: #e0f2f1;
+  color: #00796B;
+}
+
+/* Required for next/image fill */
+.about-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 2 / 1;
+  min-height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.about-image {
+  object-fit: cover;
+}

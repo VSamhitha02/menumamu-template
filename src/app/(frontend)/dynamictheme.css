@@ -1,0 +1,370 @@
+/* Default Theme Values (Fallback) */
+
+:root {
+  /* LIGHT COLORS */
+  --colour1-light: #ffffff;
+  --colour2-light: #000000;
+  --colour3-light: #f5f5f5;
+  --colour4-light: #0070f3;
+  --colour5-light: #333333;
+  --colour6-light: #e5e5e5;
+
+  /* DARK COLORS */
+  --colour1-dark: #0f172a;
+  --colour2-dark: #ffffff;
+  --colour3-dark: #1e293b;
+  --colour4-dark: #38bdf8;
+  --colour5-dark: #cbd5f5;
+  --colour6-dark: #334155;
+
+  /* ACTIVE (DEFAULT = LIGHT) */
+  --colour1: var(--colour1-light);
+  --colour2: var(--colour2-light);
+  --colour3: var(--colour3-light);
+  --colour4: var(--colour4-light);
+  --colour5: var(--colour5-light);
+  --colour6: var(--colour6-light);
+
+  /* TEXT + BG */
+
+  --link-color: var(--text-color);
+
+  --secondary-bg: var(--colour3);
+
+  --btn-primary-bg: var(--colour4);
+  --btn-primary-text: var(--colour1);
+
+  --btn-secondary-bg: var(--colour5);
+  --btn-secondary-text: var(--colour1);
+
+  --font-heading: Arial, sans-serif;
+  --font-body: Arial, sans-serif;
+}
+
+/* Static Styles */
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  --body-container-bg: var(--container-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--heading-color);
+}
+/* .bg-colour-colour1 {
+  background-color: var(--colour1);
+}
+.bg-colour-colour2 {
+  background-color: var(--colour2);
+}
+.bg-colour-colour3 {
+  background-color: var(--colour3);
+}
+.bg-colour-colour4 {
+  background-color: var(--colour4);
+}
+.bg-colour-colour5 {
+  background-color: var(--colour5);
+}
+.bg-colour-colour-6 {
+  background-color: var(--colour6);
+} */
+
+/* .page-bg {
+  color: var(--text-color);
+
+}
+
+.btn-primary {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  border: 2px solid var(--btn-secondary-bg);
+  color: var(--btn-secondary-bg);
+  background: transparent;
+  padding: 10px 20px;
+}
+
+.btn-secondary:hover {
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-text);
+}
+
+.theme-light {
+  --colour1: var(--colour1-light);
+  --colour2: var(--colour2-light);
+  --colour3: var(--colour3-light);
+  --colour4: var(--colour4-light);
+  --colour5: var(--colour5-light);
+  --colour6: var(--colour6-light); 
+
+  --text-color: #000000;
+}
+
+.theme-dark {
+  /* --colour1: var(--colour1-dark);
+  --colour2: var(--colour2-dark);
+  --colour3: var(--colour3-dark);
+  --colour4: var(--colour4-dark);
+  --colour5: var(--colour5-dark);
+  --colour6: var(--colour6-dark); 
+
+  --text-color: #ffffff;
+} */
+/* Static Utility Classes */
+
+.navbar {
+  color: var(--navbar-text);
+  background-color: var(--navbar-bg);
+}
+
+.footer {
+  color: var(--footer-text);
+  background-color: var(--footer-bg);
+}
+
+/* Button logic matching your Payload variants */
+.btn-fill {
+  color: var(--btn-fill-text);
+  background-color: var(--btn-fill-bg);
+ 
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-fill:hover {
+  background-color: var(--btn-fill-bg);
+  /* opacity: 0.9; */
+  filter: brightness(1.05)
+}
+
+.btn-outline {
+  color: var(--btn-outline-text);
+  border: 2px solid var(--btn-outline-border);
+  
+ 
+}
+
+.btn-outline:hover {
+  background-color: var(--btn-outline-border);
+  color: var(--bg-color); /* Inverts on hover */
+}
+
+.about1 {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.about {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.aboutTwo{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.Chefs{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.ChefScroll{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.code{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.contact{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.contactOne{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.contactTwo{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.contactUs{
+color: var(--text-color);
+background-color: var(--bg-color);
+}
+.foodCourt{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.foodCourtOne{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.form{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.franchise{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.gallary{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.gallary1{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.hero1{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.hero2{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.hero3{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.location{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.locatiomScroll{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.mainPageGallery{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.menu{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.menu2{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.menu3{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.menu4{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.menuCategories{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.menuDisplay{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.menuOne{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.multilocation{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.navigation{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.navigationdropdown{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.navigationscroll{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.navigationTwo{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.orderType{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.restaurant{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.serviceOptionsTwo{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.singleLocation{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.videoBlock{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.videoOneBlock{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.videoThreeBlock{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.videoTwoBlock{
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.testmonialsOne{
+   color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.testimonialTwo{
+   color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.hero4{
+   color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.serviceOptionThree{
+   color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.form {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.formBlock {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.formBlockOne {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.formBlockTwo {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.instagramBlock {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}

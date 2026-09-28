@@ -1,0 +1,37 @@
+/* Theme colors */
+.about-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.about-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.about-orange {
+  background-color: #FFF3E0; /* Light orange background */
+  color: #BF360C;           /* Deep orange text */
+}
+
+.about-green {
+  background-color: #e0f2f1; /* Light green background */
+  color: #00796B;           /* Dark green text */
+}
+
+/* Required for next/image fill */
+.about-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  flex: 1;
+  aspect-ratio: 2 / 1;
+  min-height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* Image fill support */
+.about-image {
+  object-fit: cover;
+}

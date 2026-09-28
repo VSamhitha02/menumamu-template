@@ -1,0 +1,49 @@
+/* ================== Theme Variations Only ================== */
+
+/* ---- Black Theme ---- */
+.menu-black {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ---- White Theme ---- */
+.menu-white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ---- Orange Theme ---- */
+.menu-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+/* ---- Green Theme ---- */
+.menu-green {
+  background-color: #E8F5E9; /* Light green */
+  color: #1B5E20;
+}
+
+/* ---- Modern Light Theme ---- */
+.menu-modern-light {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+/* ---- Modern Dark Theme ---- */
+.menu-modern-dark {
+  background-color: #BF360C;
+  color: #fff;
+}
+
+/* Ensure text inherits properly in dark themes */
+.menu-black h1,
+.menu-black h2,
+.menu-black h3,
+.menu-black p,
+.menu-modern-dark h1,
+.menu-modern-dark h2,
+.menu-modern-dark h3,
+.menu-modern-dark p {
+  color: inherit;
+}

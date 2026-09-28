@@ -1,0 +1,109 @@
+/* ---- Navigation Base Styling ---- */
+.navbar {
+  background-color: var(--nav-bg) !important;
+  color: var(--nav-text) !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+  outline: none !important;
+}
+
+/* Ensure Mobile Sheet / Portal Container inherits dynamic CSS variables */
+.mobile-nav-sheet,
+[data-radix-portal] [role="dialog"],
+[data-slot="sheet-content"] {
+  background-color: var(--nav-bg) !important;
+  color: var(--nav-text) !important;
+  border: none !important;
+}
+
+/* ---- Button Classes ---- */
+.btn-fill {
+  background-color: var(--btn-fill-bg) !important;
+  color: var(--btn-fill-text) !important;
+  border: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-fill:hover {
+  filter: brightness(0.9) !important;
+  color: var(--btn-fill-text) !important;
+}
+
+.btn-outline {
+  background-color: var(--btn-outline-bg, transparent) !important;
+  color: var(--btn-outline-text) !important;
+  border: 1px solid var(--btn-outline-border) !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-outline:hover {
+  background-color: color-mix(in srgb, var(--btn-outline-border) 15%, transparent) !important;
+  color: var(--btn-outline-text) !important;
+}
+
+/* Navigation Links */
+.nav-link {
+  color: var(--nav-text) !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.nav-link:hover {
+  opacity: 0.75 !important;
+}
+
+/* User Menu Button & Sheet Trigger Icon */
+.nav-icon-button {
+  color: var(--nav-text) !important;
+  border-color: color-mix(in srgb, var(--nav-text) 25%, transparent) !important;
+  background-color: color-mix(in srgb, var(--nav-text) 10%, transparent) !important;
+}
+
+.nav-icon-button:hover,
+.nav-icon-button:focus,
+.nav-icon-button:active {
+  background-color: color-mix(in srgb, var(--nav-text) 20%, transparent) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* ---- Sheet Close ("X") Button Dynamic Fix ---- */
+[data-radix-portal] button[aria-label="Close"],
+.mobile-nav-sheet button[aria-label="Close"],
+.mobile-nav-sheet button.absolute,
+[data-slot="sheet-close"] {
+  background-color: transparent !important;
+  color: var(--nav-text) !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  ring: none !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+}
+
+/* Remove Orange Focus / Active States on Close Button */
+[data-radix-portal] button[aria-label="Close"]:focus,
+[data-radix-portal] button[aria-label="Close"]:focus-visible,
+[data-radix-portal] button[aria-label="Close"]:active,
+[data-radix-portal] button[aria-label="Close"][data-state="open"],
+.mobile-nav-sheet button[aria-label="Close"]:focus,
+.mobile-nav-sheet button[aria-label="Close"]:focus-visible,
+.mobile-nav-sheet button[aria-label="Close"]:active {
+  background-color: color-mix(in srgb, var(--nav-text) 15%, transparent) !important;
+  color: var(--nav-text) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Hover State for Close Icon */
+[data-radix-portal] button[aria-label="Close"]:hover,
+.mobile-nav-sheet button[aria-label="Close"]:hover {
+  background-color: color-mix(in srgb, var(--nav-text) 15%, transparent) !important;
+  color: var(--nav-text) !important;
+}
+
+/* SVG icon inheriting text color */
+[data-radix-portal] button[aria-label="Close"] svg,
+.mobile-nav-sheet button[aria-label="Close"] svg {
+  color: var(--nav-text) !important;
+  stroke: var(--nav-text) !important;
+}

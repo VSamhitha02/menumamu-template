@@ -1,0 +1,25 @@
+
+
+/* Black Theme */
+.footer-black {
+  background-color: #000;
+  color: #fff;
+}
+
+/* White Theme */
+.footer-white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Orange Theme */
+.footer-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+/* Green Theme */
+.footer-green {
+  background-color: #E8F5E9;
+  color: #1B5E20;
+}

@@ -1,0 +1,37 @@
+/* ================== Theme Variations ================== */
+
+/* Black Theme */
+.menu-black {
+  background-color: #000;
+  color: #fff;
+}
+
+/* White Theme */
+.menu-white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Orange Theme */
+.menu-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+/* Green Theme */
+.menu-green {
+  background-color: #e8f5e9;
+  color: #cef8d1;
+}
+
+/* Modern Light Theme (fallback) */
+.menu-modern-light {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+/* Modern Dark Theme (fallback) */
+.menu-modern-dark {
+  background-color: #BF360C;
+  color: #fff;
+}

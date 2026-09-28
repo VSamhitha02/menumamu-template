@@ -1,0 +1,25 @@
+/* ================= Theme Styles Only ================= */
+
+/* Black Theme */
+.franchise-black {
+  background-color: #000;
+  color: #fff;
+}
+
+/* White Theme */
+.franchise-white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Orange Theme */
+.franchise-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+/* Green Theme */
+.franchise-green {
+  background-color: #E0F2F1;
+  color: #00796B;
+}

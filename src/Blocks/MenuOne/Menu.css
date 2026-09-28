@@ -1,0 +1,25 @@
+/* ================== Theme Variations ONLY ================== */
+
+/* ---- Black Theme ---- */
+.menu-black {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ---- White Theme ---- */
+.menu-white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ---- Orange Theme ---- */
+.menu-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+/* ---- Green Theme ---- */
+.menu-green {
+  background-color: #ffffff;
+  color: #1B5E20;
+}

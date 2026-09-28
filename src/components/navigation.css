@@ -1,0 +1,53 @@
+/* --- Green Theme --- */
+.green-theme .navbar {
+  background-color: #e8f5e9 !important;
+  color: #1b5e20;
+}
+.green-theme a .navbar{ color: #2e7d32; }
+.navbar.green-theme a:hover { color: #1b5e20; }
+.navbar.green-theme button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+}
+.navbar.green-theme button:hover { background-color: #1b5e20; }
+
+/* --- Black Theme --- */
+.black-theme .navbar {
+  background-color: #000 !important;
+  color: #fff;
+}
+.black-theme .navbar a { color: #90caf9; }
+.black-theme .navbar a:hover { color: #42a5f5; }
+.black-theme .navbar button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+.black-theme .navbar button:hover { background-color: #e0e0e0; }
+
+/* --- Orange Theme --- */
+.orange-theme .navbar{
+  background-color: #fff3e0 !important;
+  color: #bf360c;
+}
+.orange-theme .navbar a { color: #e65100; }
+.orange-theme .navbar button {
+  background-color: #e65100;
+  color: white;
+  border: none;
+}
+.orange-theme button:hover .navbar { background-color: #bf360c; }
+
+/* --- White Theme --- */
+.white-theme .navbar {
+  background-color: #fff !important;
+  color: #000;
+}
+.white-theme .navbar a { color: #1976d2; }
+.white-theme .navbar button {
+  background-color: #000;
+  color: #fff;
+}
+.white-theme .navbar button:hover { background-color: #333; }
+

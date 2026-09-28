@@ -1,0 +1,84 @@
+/* ================= THEME STYLES ONLY ================= */
+
+/* Black Theme */
+.hero2-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.hero2-black a {
+  color: #fff;
+}
+
+.hero2-black .hero2-button {
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.hero2-black .hero2-button:hover {
+  background-color: #555;
+}
+
+
+/* White Theme */
+.hero2-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.hero2-white a {
+  color: #000;
+}
+
+.hero2-white .hero2-button {
+  background-color: #ddd;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+.hero2-white .hero2-button:hover {
+  background-color: #ccc;
+}
+
+
+/* Orange Theme */
+.hero2-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+.hero2-orange a {
+  color: #BF360C;
+}
+
+.hero2-orange .hero2-button {
+  background-color: #FF9800;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.hero2-orange .hero2-button:hover {
+  background-color: #F57C00;
+}
+
+
+/* Green Theme */
+.hero2-green {
+  background-color: #E0F2F1;
+  color: #00796B;
+}
+
+.hero2-green a {
+  color: #00796B;
+}
+
+.hero2-green .hero2-button {
+  background-color: #26A69A;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.hero2-green .hero2-button:hover {
+  background-color: #00897B;
+}

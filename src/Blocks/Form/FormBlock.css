@@ -1,0 +1,30 @@
+/* FormBlock.css */
+
+.form-black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.form-white {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.form-orange {
+  background-color: #f97316;
+  color: #ffffff;
+}
+
+.form-green {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+/* Optional: card background variants, if you want the inner card to react too */
+.form-black .form-card {
+  background-color: #111111;
+}
+
+.form-white .form-card {
+  background-color: #ffffff;
+}

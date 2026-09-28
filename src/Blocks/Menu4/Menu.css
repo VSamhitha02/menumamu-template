@@ -1,0 +1,45 @@
+/* ================== Theme Backgrounds ================== */
+
+.menu-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.menu-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.menu-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+.menu-green {
+  background-color: #ffffff;
+  color: #1B5E20;
+}
+
+.menu-modern-light {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+.menu-modern-dark {
+  background-color: #BF360C;
+  color: #ffffff;
+}
+
+/* Ensure text visible in dark theme */
+.menu-black h1,
+.menu-black h2,
+.menu-black h3,
+.menu-black h4,
+.menu-black p,
+.menu-modern-dark h1,
+.menu-modern-dark h2,
+.menu-modern-dark h3,
+.menu-modern-dark h4,
+.menu-modern-dark p {
+  color: inherit;
+}

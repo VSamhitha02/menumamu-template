@@ -1,0 +1,157 @@
+/* ================== Base Styles ================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================== Theme Variations ================== */
+
+/* ---- Black Theme ---- */
+.menu-black {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ---- White Theme ---- */
+.menu-white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ---- Orange Theme ---- */
+.menu-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+/* ---- Green Theme (Updated) ---- */
+.menu-green {
+  background-color: white; /* Light pastel green */
+  color: #1B5E20; /* Deep forest green */
+}
+
+/* ---- Modern Light Theme (fallback) ---- */
+.menu-modern-light {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+/* ---- Modern Dark Theme (fallback) ---- */
+.menu-modern-dark {
+  background-color: #BF360C;
+  color: #fff;
+}
+
+/* Ensure dark theme text remains readable */
+.menu-black h2,
+.menu-black p,
+.menu-black li,
+.menu-modern-dark h2,
+.menu-modern-dark p,
+.menu-modern-dark li {
+  color: #fff;
+}
+
+/* ================== Menu Card Styles ================== */
+.menu-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Green Theme Card Styling */
+.menu-green .menu-card {
+  background-color: #C8E6C9;
+  color: #1B5E20;
+}
+
+/* ================== Special Tag Styles ================== */
+.menu-tag {
+  display: inline-block;
+  background-color: #388E3C; /* Rich Green */
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+/* Grid layout and spacing */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Image styling */
+.w-full {
+  width: 100%;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+/* Typography */
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-gray-600 {
+  color: #4b5563;
+}
+
+/* Button styling */
+button {
+  background-color: #43A047;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2E7D32;
+}
+
+/* ================== Responsive Typography Adjustments ================== */
+@media (max-width: 480px) {
+  h2.text-3xl {
+    font-size: 2.2rem;
+  }
+  p.text-lg {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,57 @@
+/* Background image helper */
+.hero-image {
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Theme Button Styles ---------- */
+
+/* Black Theme */
+.hero-black .hero-button {
+  background-color: #222;
+}
+
+.hero-black .hero-button:hover {
+  background-color: #444;
+  transform: translateY(-3px);
+}
+
+/* White Theme */
+.hero-white .hero-button {
+  background-color: #ddd;
+  color: #000;
+}
+
+.hero-white .hero-button:hover {
+  background-color: #ccc;
+  transform: translateY(-3px);
+}
+
+/* Orange Theme */
+.hero-orange .hero-button {
+  background-color: #ff9800;
+}
+
+.hero-orange .hero-button:hover {
+  background-color: #f57c00;
+  transform: translateY(-3px);
+}
+
+/* Green Theme */
+.hero-green .hero-button {
+  background-color: #4cbb17;
+}
+
+.hero-green .hero-button:hover {
+  background-color: #00897b;
+  transform: translateY(-3px);
+}

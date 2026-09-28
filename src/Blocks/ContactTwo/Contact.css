@@ -1,0 +1,50 @@
+
+/* Black Theme */
+.contact-black {
+  background-color: #000;
+  color: #fff;
+}
+
+/* White Theme */
+.contact-white {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Orange Theme */
+.contact-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+/* Green Theme */
+.contact-green {
+  background-color: #E8F5E9; /* light green background */
+  color: #1B5E20;
+}
+
+/* ================== Green Theme Form Overrides ================== */
+
+.contact-green input,
+.contact-green textarea {
+  border: 1px solid #388E3C;
+  background-color: #C8E6C9;
+  color: #1B5E20;
+}
+
+.contact-green input:focus,
+.contact-green textarea:focus {
+  border-color: #2E7D32;
+  outline: none;
+}
+
+/* ================== Green Theme Button Override ================== */
+
+.contact-green button {
+  background-color: #43A047;
+  color: #fff;
+}
+
+.contact-green button:hover {
+  background-color: #2E7D32;
+}

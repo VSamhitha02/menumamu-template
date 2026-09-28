@@ -1,0 +1,66 @@
+/* ================= Theme Backgrounds ================= */
+
+.menu-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.menu-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.menu-orange {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+.menu-green {
+  background-color: #ffffff;
+  color: #1B5E20;
+}
+
+.menu-modern-dark {
+  background-color: #BF360C;
+  color: #fff;
+}
+
+.menu-modern-light {
+  background-color: #FFF3E0;
+  color: #BF360C;
+}
+
+
+/* ================= Card Styling ================= */
+
+.menu-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+
+/* ================= Theme Card Overrides ================= */
+
+.menu-black .menu-card,
+.menu-modern-dark .menu-card {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.menu-green .menu-card {
+  background-color: #C8E6C9;
+  color: #1B5E20;
+}
+
+.menu-orange .menu-card {
+  background-color: #ffffff;
+  color: #BF360C;
+}

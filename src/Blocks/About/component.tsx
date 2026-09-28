@@ -79,4 +79,3 @@ const AboutRenderer: React.FC<AboutRendererProps> = (props) => {
 
 export default AboutRenderer
 
-// ?

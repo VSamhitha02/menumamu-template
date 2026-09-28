@@ -55,6 +55,9 @@
     "directory": ".open-next/assets",
     "binding": "ASSETS",
   },
+    "vars": {
+    "PAYLOAD_SECRET": "0b2a6291074d7dabc5bd6e8e"
+  },
 
   "observability": {
     "enabled": false,

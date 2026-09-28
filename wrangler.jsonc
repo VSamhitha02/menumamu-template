@@ -45,7 +45,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "main": ".open-next/worker.js",
-  "account_id": "d9baaab0c1064d8c998c9c6482185697",
+  "account_id": "f80af8d4a0caa6e8ede40ff9001333f6",
 
   
   "name": "my-payload-project",
@@ -77,15 +77,15 @@
       "binding": "D1",
       // "database_name": "menumamu-prod",
       // "database_id": "42ef5204-675c-4baf-b299-95f5d7a2bf33",
-      "database_name": "menu-mamu-prod",
-      "database_id": "e92838a1-1579-42a7-959b-8519a0baeed1",
+      "database_name": "menumamu-template",
+      "database_id": "30b1330d-8240-4636-950e-a61f30bb74c5",
       "remote": true,
     },
   ],
   "r2_buckets": [
     {
       "binding": "R2",
-      "bucket_name": "menu-mamu-r2-prod",
+      "bucket_name": "bucket1",
       "remote": true,
       // "preview_bucket_name": "payload-media-dev"
     },
@@ -93,7 +93,7 @@
     {
       // Required by OpenNext for caching
       "binding": "NEXT_INC_CACHE_R2_BUCKET",
-      "bucket_name": "menu-mamu-r2-prod",
+      "bucket_name": "bucket1",
       "remote": true,
       // "preview_bucket_name": "payload-media-dev"
     },
@@ -106,8 +106,12 @@
           "binding": "D1",
           // "database_name": "menu-mamu",
           // "database_id": "9a11b289-b110-4ed0-9ea4-7c730dd91667",
-          "database_name": "menu-mamu-prod",
-          "database_id": "e92838a1-1579-42a7-959b-8519a0baeed1",
+          // "database_name": "menu-mamu-prod",
+          // "database_id": "e92838a1-1579-42a7-959b-8519a0baeed1",
+          "database_name": "menumamu-template",
+          "database_id": "30b1330d-8240-4636-950e-a61f30bb74c5",
+          
+
           // "database_name": "menumamu-prod",
           // "database_id": "42ef5204-675c-4baf-b299-95f5d7a2bf33",
           "remote": true,
@@ -117,14 +121,14 @@
         {
           "binding": "R2",
           // "bucket_name": "menu-memu-r2",
-          "bucket_name": "menu-mamu-r2-prod",
+          "bucket_name": "bucket1",
           // "bucket_name": "menumamu-prod-bucket",
           "remote": true,
         },
         {
           "binding": "NEXT_INC_CACHE_R2_BUCKET",
           // "bucket_name": "menu-memu-r2",
-          "bucket_name": "menu-mamu-r2-prod",
+          "bucket_name": "bucket1",
           // "bucket_name": "menumamu-prod-bucket",
           "remote": true,
         },

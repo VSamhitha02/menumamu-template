@@ -10,7 +10,7 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react', 'date-fns', 'react-icons','@radix-ui/react-dialog'],
   },
-    serverComponentsExternalPackages: [ 'graphql'], 
+    serverExternalPackages: [ 'graphql'], 
 }
 
 export default withPayload(nextConfig)

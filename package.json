@@ -95,9 +95,7 @@
       "sharp",
       "unrs-resolver",
       "workerd"
-    ],
-    "patchedDependencies": {
-      "payload": "patches/payload.patch"
-    }
+    ]
+
   }
 }

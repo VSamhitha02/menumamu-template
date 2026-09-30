@@ -21,9 +21,9 @@ import { isSuperAdmin } from './app/access'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
-// const cloudflareRemoteBindings =
-//   process.env.USE_REMOTE === 'true' || process.env.NODE_ENV === 'production'
-const cloudflareRemoteBindings = process.env.USE_REMOTE === 'true'
+const cloudflareRemoteBindings =
+  process.env.USE_REMOTE === 'true' || process.env.NODE_ENV === 'production'
+// const cloudflareRemoteBindings = process.env.USE_REMOTE === 'true'
 
 console.log('users', Users.slug)
 

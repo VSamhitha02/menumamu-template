@@ -4,6 +4,7 @@
   "description": "A blank template to get started with Payload 3.0",
   "license": "MIT",
   "type": "module",
+  "packageManager": "pnpm@10.28.2",
   "scripts": {
     "deploy:triguna": "cross-env NODE_ENV=production WORKER_NAME=$WORKER_NAME RESTAURANT=$RESTAURANT_ID pnpm run deploy:custom",
     "deploy:rest2": "cross-env NODE_ENV=production WORKER_NAME=menumamu-restaurant2 RESTAURANT=restaurant2 pnpm run deploy:custom",
@@ -14,7 +15,7 @@
     "dev:remote": "cross-env USE_REMOTE=true NODE_OPTIONS=--no-deprecation next dev --turbo",
     "devsafe": "rm -rf .next && rm -rf .open-next && cross-env NODE_OPTIONS=--no-deprecation next dev --turbo",
     "share": "npx cloudflared tunnel --url http://localhost:3000",
-    "build": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next build",
+    "build": "cross-env NODE_OPTIONS=\"--no-deprecation --max-old-space-size=8000\" next build --webpack",
     "build:worker": "opennextjs-cloudflare build",
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
     "lint": "eslint",
@@ -52,6 +53,7 @@
     "clsx": "^2.1.1",
     "country-state-city": "^3.2.1",
     "cross-env": "^7.0.3",
+    "drizzle-kit": "0.31.7",
     "embla-carousel-react": "^8.5.2",
     "framer-motion": "^12.6.2",
     "graphql": "^16.8.1",
@@ -96,6 +98,5 @@
       "unrs-resolver",
       "workerd"
     ]
-
   }
 }

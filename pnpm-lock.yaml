@@ -83,6 +83,9 @@ importers:
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
+      drizzle-kit:
+        specifier: 0.31.7
+        version: 0.31.7
       embla-carousel-react:
         specifier: ^8.5.2
         version: 8.5.2(react@19.3.0)
@@ -5999,11 +6002,6 @@ packages:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
 
-  semver@7.7.1:
-    resolution: {integrity: sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==}
-    engines: {node: '>=10'}
-    hasBin: true
-
   semver@7.8.5:
     resolution: {integrity: sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==}
     engines: {node: '>=10'}
@@ -10069,7 +10067,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.51.0
       debug: 4.4.3
       minimatch: 9.0.5
-      semver: 7.7.1
+      semver: 7.8.5
       tinyglobby: 0.2.15
       ts-api-utils: 2.3.0(typescript@5.7.3)
       typescript: 5.7.3
@@ -13099,8 +13097,6 @@ snapshots:
   secure-json-parse@4.1.0: {}
 
   semver@6.3.1: {}
-
-  semver@7.7.1: {}
 
   semver@7.8.5: {}
 

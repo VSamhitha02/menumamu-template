@@ -99,6 +99,7 @@ export default buildConfig({
   },
   db: sqliteD1Adapter({
     binding: cloudflare.env.D1,
+    push: false,
   }),
   plugins: [
     payloadCloudPlugin(),
